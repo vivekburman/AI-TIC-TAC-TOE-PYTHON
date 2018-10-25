@@ -6,6 +6,9 @@ from flask_restful import Resource
 class FetchMoveController(Resource):
     AI_PLAYER='X'
     HU_PLAYER='O'
+    def get(self):
+        if endpoint == "testing":
+            return "Successfull in testing."
     def post(self):
         if request.endpoint == "get_next_move":
             board=request.get_json(force=True)

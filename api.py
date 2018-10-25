@@ -13,5 +13,9 @@ api.add_resource(FetchMoveController,
     apiPath + "/get-winner",
     endpoint = "get_winner"
 )
+api.add_resource(FetchMoveController,
+    apiPath + "/testing",
+    endpoint = "testing"
+)
 if __name__ == '__main__':
  app.run(debug=True, host=APIConfig.API['host'], port=APIConfig.API['port'], threaded=True)
