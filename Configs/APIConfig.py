@@ -1,8 +1,6 @@
-import os
-port = int(os.environ.get("PORT", 5000))
 API = {
-    'host': 'ai-tic-tac-toe-api.herokuapp.com',
+    'host': 'localhost',
     'version': '1.0.0',
-    'port': port
+    'port': 3001
 };
 APIPATH = '/api/v' + API['version']
